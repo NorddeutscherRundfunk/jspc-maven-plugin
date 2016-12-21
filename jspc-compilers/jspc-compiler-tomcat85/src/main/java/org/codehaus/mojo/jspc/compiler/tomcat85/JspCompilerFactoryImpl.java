@@ -16,13 +16,13 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package org.codehaus.mojo.jspc.compiler.tomcat7;
+package org.codehaus.mojo.jspc.compiler.tomcat85;
 
 import org.codehaus.mojo.jspc.compiler.JspCompiler;
 import org.codehaus.mojo.jspc.compiler.JspCompilerFactory;
 import org.codehaus.plexus.component.annotations.Component;
 
-@Component(role=JspCompilerFactory.class, hint="tomcat7")
+@Component(role=JspCompilerFactory.class, hint="tomcat85")
 public class JspCompilerFactoryImpl implements JspCompilerFactory {
 
     public JspCompiler createJspCompiler() {

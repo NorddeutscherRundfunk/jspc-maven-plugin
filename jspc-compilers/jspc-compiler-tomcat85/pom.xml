@@ -28,11 +28,11 @@
         <version>2.0.3-SNAPSHOT</version>
     </parent>
     
-    <artifactId>jspc-compiler-tomcat7-multithreaded</artifactId>
-    <name>JSPC Compiler for Tomcat 7</name>
+    <artifactId>jspc-compiler-tomcat85</artifactId>
+    <name>JSPC Compiler for Tomcat 8.5</name>
 
     <properties>
-        <tomcatVersion>7.0.57</tomcatVersion>
+        <tomcatVersion>8.5.9</tomcatVersion>
     </properties>
     
     <dependencies>

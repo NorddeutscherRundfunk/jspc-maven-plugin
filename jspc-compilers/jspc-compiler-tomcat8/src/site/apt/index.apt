@@ -44,5 +44,5 @@
 
 Introduction
 
- Provides JSP compilation support for {{{http://tomcat.apache.org/tomcat-7.0-doc}Tomcat 7}}.
+ Provides JSP compilation support for {{{http://tomcat.apache.org/tomcat-8.0-doc}Tomcat 8}}.
 

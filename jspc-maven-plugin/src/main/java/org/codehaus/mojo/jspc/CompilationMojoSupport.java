@@ -121,7 +121,7 @@ abstract class CompilationMojoSupport extends AbstractMojo {
     boolean compile;
 
     /**
-     * Set this to false if you don"t want to include the compiled JSPs
+     * Set this to false if you don't want to include the compiled JSPs
      * in your web.xml nor add the generated sources to your project"s
      * source roots.
      */
@@ -366,7 +366,9 @@ abstract class CompilationMojoSupport extends AbstractMojo {
         // JspC needs URLClassLoader, with tools.jar
         final ClassLoader parent = Thread.currentThread().getContextClassLoader();
         final JspcMojoClassLoader cl = new JspcMojoClassLoader(parent);
-        cl.addURL(findToolsJar());
+        if(compile) {
+            cl.addURL(findToolsJar());
+        }
         Thread.currentThread().setContextClassLoader(cl);
 
         try {
@@ -399,7 +401,7 @@ abstract class CompilationMojoSupport extends AbstractMojo {
         }
         
         // Maybe install the generated classes into the default output directory
-        if (compile && isWar) {
+        if (compile && isWar && includeInProject) {
             final Scanner scanner = buildContext.newScanner(this.workingDirectory);
             scanner.addDefaultExcludes();
             scanner.setIncludes(new String[] { "**/*.class" });

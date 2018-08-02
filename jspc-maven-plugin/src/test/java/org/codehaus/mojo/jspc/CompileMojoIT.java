@@ -27,26 +27,6 @@ import org.junit.Test;
 
 
 public class CompileMojoIT {
-    @Test
-    public void testJspc5() throws Exception {
-        File testDir = ResourceExtractor.simpleExtractResources( getClass(), "/jspc-5" );
-        
-        testJspc(testDir);
-    }
-    
-    @Test
-    public void testJspc6() throws Exception {
-        File testDir = ResourceExtractor.simpleExtractResources( getClass(), "/jspc-6" );
-        
-        testJspc(testDir);
-    }
-    
-    @Test
-    public void testJspc7() throws Exception {
-        File testDir = ResourceExtractor.simpleExtractResources( getClass(), "/jspc-7" );
-        
-        testJspc(testDir);
-    }
 
     protected void testJspc(File testDir) throws VerificationException {
         Verifier verifier  = new Verifier(testDir.getAbsolutePath() );

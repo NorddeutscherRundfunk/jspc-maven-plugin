@@ -33,14 +33,9 @@
     <packaging>pom</packaging>
     
     <modules>
-        <module>jspc-compiler-tomcat5</module>
-        <module>jspc-compiler-tomcat6</module>
-        <module>jspc-compiler-tomcat7</module>
         <module>jspc-compiler-tomcat8</module>
         <module>jspc-compiler-tomcat85</module>
         <module>jspc-compiler-tomcat9</module>
-        <module>jspc-compiler-glassfish3</module>
-        <module>jspc-compiler-tomcat7-multithreaded</module>
     </modules>
     
     <build>
